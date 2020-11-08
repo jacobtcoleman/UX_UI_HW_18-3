@@ -1,4 +1,4 @@
-# Portfolio v3
+# Portfolio v3.0
 This is the repository for the third iteration of my portfolio.
 
 I have tried to use responsive values throughout this code, but I'm still having trouble controlling the positioning of elements, especailly images, which vary from one display to the other.
