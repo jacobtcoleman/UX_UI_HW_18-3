@@ -1,0 +1,310 @@
+p {
+font-family: 'Oswald', sans-serif;
+margin-top: 0px;
+}
+
+h1 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+color: #E52464;
+font-weight: lighter;
+font-size: 50pt;
+}
+
+h2 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 30pt;
+}
+
+h3 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+color: white;
+font-weight: normal;
+}
+
+h4 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+color: #E52464;
+font-weight: lighter;
+}
+
+h5 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+font-weight: normal;
+}
+
+h6 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+color: black;
+font-size: 24pt;
+font-weight: lighter;
+}
+
+/* Spacing between all headers*/
+h1, h2, h3, h4, h5, h6{
+margin-top:20px;
+margin-bottom:10px;
+}
+
+.link:hover{
+color: #E52464;
+}
+
+.whiteText {
+color: white;
+}
+
+ul {
+width: 100%;
+margin-left: auto;
+font-family: 'Oswald', sans-serif;
+}
+
+li {
+font-family: 'Oswald', sans-serif;
+}
+
+.inline-block {
+display: inline-block;
+vertical-align: top;
+padding: 0px;
+margin-left: 20px;
+margin-top: 10px;
+}
+
+.inline-block li{
+margin-top: 12px;
+}
+
+.inline-block li:hover {
+color: #E52464
+}
+
+.logo {
+padding: 1%;
+text-align: center;
+width: 50px;
+margin-right: -40px;
+}
+
+.navigation {
+margin-top: -32px;
+margin-bottom: 0px;
+margin-left: -42px;
+margin-right: 0px;
+}
+
+/*GRID setup*/
+main {
+display: grid;
+grid-template-rows: 80vh 50vh;
+grid-template-columns: 50vw 50vw;
+grid-template-areas: 
+"topLeftArea topRightArea"
+"middleArea middleArea"
+"bottomLeftArea bottomRightArea"
+"aboutLeftArea aboutRightArea"
+"skillsArea skillsArea"
+"contactLeft contactRight"
+}
+
+.topLeft {
+background-color: white;
+}
+
+.topRight {
+background-color: white;
+}
+
+.middle {
+background-color: #E52464;
+grid-area: middleArea;
+height: 120vw;
+margin-left:-10px;
+}
+
+.aboutLeft {
+background-color: white;
+margin-top: 15vh;
+padding: 10%;
+}
+
+.aboutRight{
+margin-top: 15vh;
+}
+
+#landing {
+line-height: auto;
+margin-top: 0%;
+padding: 10%;
+}
+
+.mockup {
+position: absolute;
+top: 10%;
+margin-left:5%;
+}
+
+#showcase2 {
+position: relative;
+top: -10vh;
+max-width: 40vw;
+max-height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+
+#showcase2 img {
+position: relative;
+top: 20%;
+margin-left:10%;
+max-width: 40vw;
+max-height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+
+#showcase3 {
+position: relative;
+top: 25vh;
+max-width: 40vw;
+max-height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+
+#showcase3 img {
+position: relative;
+top: 20%;
+margin-left: auto;
+margin-right: auto;
+max-width: 40vw;
+max-height: auto;
+}
+
+.aboutRight img {
+position: relative;
+top: 20%;
+max-width: 50vW;
+}
+
+.leftText {
+margin-left: 0%;
+}
+
+.synopsis {
+max-width:36vw;
+}
+
+/* Fly out button on the side*/
+.sidenav a {
+position: absolute; /* Position them relative to the browser window */
+left: -290px; /* Position them outside of the screen */
+transition: 0.3s; /* Add transition on hover */
+padding: 20px; /* 15px padding */
+width: 400px; /* Set a specific width */
+text-decoration: none; /* Remove underline */
+font-size: 20px; /* Increase font size */
+font-family: 'Oswald', sans-serif;
+color: white; /* White text color */
+border-radius: 0 10px 10px 0; /* Rounded corners on the top right and bottom right side */
+text-align: right;
+background-color: #E52464;
+}
+
+.sidenav a:hover {
+left: 0; /* On mouse-over, make the elements appear as they should */
+background-color: #0093D5;
+}
+
+#theLatest {
+top: 71vh;
+}
+
+.button {
+background-color: white;
+border: none;
+color: white;
+font-family: 'Oswald', sans-serif;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 18px;
+margin: 4px 2px;
+transition-duration: 0.3s;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.button1 {
+background-color: #E52464;
+color: white;
+border: 2px solid white;
+}
+
+.button1:hover {
+background-color: white;
+color: #E52464;
+}
+
+.button2 {
+background-color: white;
+color: #E52464;
+border: 2px solid #E52464;
+}
+
+.button2:hover {
+background-color: #E52464;
+color: white;
+}
+
+.about {
+font-size: 140%;
+font-weight: lighter;
+}
+
+.skills {
+background-color: #E52464;
+grid-area: skillsArea;
+height: 50vh;
+margin-left:-10px;
+text-align: center;
+}
+
+.flexContainer {
+display: flex;
+flex-direction: row;
+background-color: #E52464;
+justify-content: center;
+align-items: center;
+width: 100%
+}
+
+.flexContainer img {
+margin-right: 10%;
+margin-left: 10%;
+padding: 10px;
+width: 15vw;
+border-color: white;
+border-width: thick;
+align-items: center;
+}
+
+.skill {
+width:20%;
+}
+
+.skill p {
+color: white;
+}
+
+.skill h3 {
+font-size: 140%;
+}
